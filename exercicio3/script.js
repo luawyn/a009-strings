@@ -15,13 +15,14 @@ console.log(frase)
 // b) Crie uma nova string a partir da primeira, trocando **verde** por **rosa**, e **azul** por **laranja**;
 const frase2 = frase.replace('verde', 'rosa').replace('azul', 'laranja')
 // frase.replace('azul', 'laranja')
-console.log(frase2)
+console.log('Frase com as alterações: ' + frase2)
 // c) Verifique se a nova string inclui **verde**, e se inclui **laranja**.
-console.log(
+const novaFrase =
   'A nova string inclui "verde" e "laranja"? ' +
-    frase2.includes('verde', 'laranja')
-)
+  frase2.includes('verde', 'laranja')
+console.log(novaFrase)
 // **EXTRA:** tente fazer o “mas não deixe o gato sair” ficar em maiúsculo, assim como o “BOAS VINDAS”
-fraseNova = 'Jorge tem uma casa verde e com portão azul, com os dizeres: '
-fraseUpper = '"BOAS VINDAS, mas não deixe o gato sair"'
-console.log(fraseNova + fraseUpper.toUpperCase())
+const fraseUpper = 'mas não deixe o gato sair'.toUpperCase()
+console.log(
+  'Frase maiúscula: ' + frase2.replace('mas não deixe o gato sair', fraseUpper)
+)
